@@ -1,0 +1,116 @@
+{
+  "project_info": {
+    "project_number": "794416349144",
+    "firebase_url": "https://warond-f4092.firebaseio.com",
+    "project_id": "warond-f4092",
+    "storage_bucket": "warond-f4092.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794416349144:android:8060be9f5a142eb093bcad",
+        "android_client_info": {
+          "package_name": "com.awma.seljukempire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794416349144-f3eancqgk07p8fii3nc870c9jksh2d0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awma.seljukempire",
+            "certificate_hash": "0e03f58bd420cdd63d3ba30cd8753264f27cc7fe"
+          }
+        },
+        {
+          "client_id": "794416349144-l1kbjhkekp0v1n94t370eo0val54ilhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiR_9z2NDMlZ_SaJ6LMPLLlQzoRcZh9J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794416349144-l1kbjhkekp0v1n94t370eo0val54ilhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794416349144:android:3483701f9634a55793bcad",
+        "android_client_info": {
+          "package_name": "com.doroob.Khwarazmian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794416349144-l1kbjhkekp0v1n94t370eo0val54ilhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiR_9z2NDMlZ_SaJ6LMPLLlQzoRcZh9J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794416349144-l1kbjhkekp0v1n94t370eo0val54ilhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7831733331383820~1894879834"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794416349144:android:c47606a36fbbdb8193bcad",
+        "android_client_info": {
+          "package_name": "com.doroob.seljuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794416349144-uo59uesfolqi498ujqqnqv14f449ifn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doroob.seljuk",
+            "certificate_hash": "324ea657ae7eacef60811210e4fff27589543c78"
+          }
+        },
+        {
+          "client_id": "794416349144-l1kbjhkekp0v1n94t370eo0val54ilhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiR_9z2NDMlZ_SaJ6LMPLLlQzoRcZh9J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794416349144-l1kbjhkekp0v1n94t370eo0val54ilhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-7831733331383820~4934735478"
+    }
+  ],
+  "configuration_version": "1"
+}

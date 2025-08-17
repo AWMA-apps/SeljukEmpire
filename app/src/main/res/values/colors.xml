@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#2E7D32</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#FFC107</color>
+
+
+    <color name="veryDarkColor">#2D3647</color>
+    <color name="darkColor">#3D4457</color>
+    <color name="darkGray">#7D7E80</color>
+    <color name="lightColor">#F7F7F7</color>
+    <color name="veryLightColor">#EEEEEE</color>
+
+    <color name="adTextColor">#232323</color>
+    <color name="adHeaderTextColor">#2196F3</color>
+</resources>
