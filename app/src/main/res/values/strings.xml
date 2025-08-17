@@ -39,7 +39,6 @@
 
     </string>
     <string name="action_settings">Settings</string>
-    <string name="ic_baseline_arrow_backforward_24">@drawable/ic_baseline_arrow_back_24</string>
     <string name="Cancel">Cancel</string>
     <string name="availableLangueges">Available Languages</string>
     <string name="open_in_browser">Open In Browser</string>

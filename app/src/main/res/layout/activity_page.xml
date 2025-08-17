@@ -46,7 +46,7 @@
                 app:title="Tool bar"
                 app:titleTextColor="@color/white"
                 app:layout_collapseMode="pin"
-                app:navigationIcon="@string/ic_baseline_arrow_backforward_24"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
                 app:popupTheme="@style/Theme.SeljukEmpire.PopupOverlay" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
