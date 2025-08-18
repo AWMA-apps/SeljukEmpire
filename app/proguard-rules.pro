@@ -19,3 +19,20 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Firebase Database model classes
+-keepclassmembers class * {
+  @com.google.firebase.database.IgnoreExtraProperties <fields>;
+}
+-keepclassmembers class * {
+  @com.google.firebase.database.PropertyName <methods>;
+}
+# احفظ كلاس شخصياتك بدون تعديل
+-keepclassmembers class com.awma.seljukempire.data.model.** {
+    <init>();
+    <fields>;
+}
+
+# احفظ الـ no-arg constructors
+-keepclassmembers class * {
+    public <init>();
+}

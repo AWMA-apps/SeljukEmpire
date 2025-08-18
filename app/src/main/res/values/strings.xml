@@ -22,22 +22,6 @@
     <string name="connectToTheInternet">Connect to the Internet and</string>
     <string name="retry">Retry</string>
     <string name="showAdMessage">I\'m annoying you! but your clicks are my death die</string>
-    <string name="title_activity_page">ScrollingActivity</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-    </string>
     <string name="action_settings">Settings</string>
     <string name="Cancel">Cancel</string>
     <string name="availableLangueges">Available Languages</string>
@@ -49,7 +33,5 @@
     <string name="app_descKh">The history of Khwarazmian State (1190 – 1220). Listed headlines with the most
         prominent effective fingers. It found by Atsuz Khwarizm Shah at the end of the last Seljuk Empire sultans Sanjar bin Malik Shah
     and demise by Mongols. happy reading for you!</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+
 </resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الدولة السلجوقية (الأحداث والشخصيات)</string>
+    <string name="characters">أبرز الشخصيات</string>
+    <string name="events">الأحداث</string>
+    <string name="menu_moreApps">المزيد من التطبيقات</string>
+    <string name="menu_rate">تقييم البرنامج</string>
+    <string name="menu_contactMe">تواصل معي</string>
+    <string name="aboutApp">حول البرنامج</string>
+    <string name="share_by">مشاركة بواسطة</string>
+    <string name="app_desc">كل ما يتعلق بالدولة السلجوقية او ما يسمى (دولة السلاجقة العِظام) منذ نشأتها الاولى في قبيلة قنق في بلاد ماوراء النهر ، حتى زوالها على يد الخوارزميين في الشرق والمغول بعد ذلك في الغرب ، مع طرح شامل ومُنَقّح لأبرز الشخصيات الفعَّالة في الدولة السلجوقية</string>
+    <string name="download_now_on">حمله من جوجل بلاي</string>
+    <string name="youDontHaveEmailApp">ليس لديكم تطبيق يستخدم البريد الإلكتروني</string>
+    <string name="choseApp">اختر تطبيقا للبدأ</string>
+    <string name="writeYourMsgdownHere">اكتب رسالتك هنا في الاسفل</string>
+    <string name="version">النسخة</string>
+    <string name="developer">المطور</string>
+    <string name="close">اغلاق</string>
+    <string name="allowPermision">من فضلك ، امنح السماحية المطلوبة لتنفيذ المهمة</string>
+    <string name="connectToTheInternet">اتصل بالانترنت و </string>
+    <string name="retry">اعد المحاولة</string>
+    <string name="showAdMessage">انا ازعجك ، لكن نقرك على الاعلان هو قوت يومي ، شكراً لتفهمك :)</string>
+    <string name="action_settings">اعدادات</string>
+
+    <string name="Cancel">الغاء</string>
+    <string name="availableLangueges">اللغات المتوفرة</string>
+    <string name="open_in_browser">فتح في المستعرض</string>
+    <string name="other_available_languages">لغات اخرى متوفرة</string>
+    <string name="loadingData">جاري الحصول على المعلومات لك\n الحصول على النصوص والصور يحتاج الى انترنت للمرة الأولى فقط</string>
+    <string name="lightMode">الوضع الفاتح</string>
+    <string name="app_nameKh">تاريخ الدولة الخوارزمية</string>
+    <string name="app_descKh">هذا التطبيق يحكي تاريخ الدولة الخوارزمية (1190م - 1220م) بشكل مفهرس العناوين مع أبرز الشخصيات الفعالة في الدولة ، وقد قامت الدولة على يد أتسز خوارزم شاه وأبنائه وقت غروب آخر سلاطين الدولة السلجوقية سنجر بن ملكشاه ، وانتهت على يد المغول مرتين ، الاولى بقيادة جنكيز خان في عهد السلطان علاء الدين محمد ، فاستعادها جلال الدين منكبراتي ، والاخرى على يد أولاد جنكيز خان فانتهت الى الابد ، فقراءة ممتعة</string>
+
+</resources>

@@ -19,12 +19,10 @@
         <activity
             android:name=".presentation.ui.PageActivity"
             android:exported="false"
-            android:label="@string/title_activity_page"
             android:theme="@style/Theme.SeljukEmpire.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_main"
             android:theme="@style/Theme.SeljukEmpire.NoActionBar" />
         <activity
             android:name=".presentation.ui.MainActivity"
