@@ -50,8 +50,10 @@ class PlaceholderFragment : Fragment() {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         val root = binding.root
         val recyclerView: RecyclerView = binding.recyclerView
+        val progressBar = binding.progressBar
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.hasFixedSize()
+        recyclerView.adapter= Adapter(emptyList()) {}
 
         val sectionNumber = arguments?.getInt(ARG_SECTION_NUMBER) ?: 1
 
@@ -67,6 +69,7 @@ class PlaceholderFragment : Fragment() {
                     vm.events.observe(viewLifecycleOwner) {
                         adapter.updateList(it)
                         recyclerView.adapter = adapter
+                        progressBar.visibility = View.GONE
                     }
                     vm.viewModelScope.launch {
                         vm.loadEvents()
@@ -86,6 +89,7 @@ class PlaceholderFragment : Fragment() {
                     if (it != null) {
                         adapter.updateList(it)
                         recyclerView.adapter = adapter
+                        progressBar.visibility = View.GONE
                     }
                 }
                 vm.viewModelScope.launch {

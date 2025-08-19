@@ -33,12 +33,14 @@ android {
             )
         }
         debug {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
+        testBuildType = "debug"
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -49,6 +51,14 @@ android {
     }
     buildFeatures {
         viewBinding = true
+    }
+    packaging {
+        resources {
+            excludes += setOf(
+                "META-INF/LICENSE.md",
+                "META-INF/LICENSE-notice.md"
+            )
+        }
     }
 }
 
@@ -88,4 +98,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Mocking
+    androidTestImplementation(libs.mockk.android)
+
+    //For coroutines Testing
+    testImplementation(libs.kotlinx.coroutines.test)
 }
