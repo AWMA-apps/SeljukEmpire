@@ -4,11 +4,11 @@ import android.view.View
 import androidx.test.espresso.NoMatchingViewException
 import androidx.test.espresso.ViewAssertion
 import androidx.recyclerview.widget.RecyclerView
-import org.hamcrest.Matcher
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.notNullValue
 import org.junit.Assert.assertThat
 
+@Suppress("DEPRECATION")
 class RecyclerViewItemCountAssertion(private val expectedCount: Int = -1, private val atLeast: Int = -1) : ViewAssertion {
 
     override fun check(view: View, noViewFoundException: NoMatchingViewException?) {
