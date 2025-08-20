@@ -2,7 +2,7 @@ name: Android CI (Kotlin)
 
 on:
   push:
-    branches: [ "master" ]   # الفرع الرئيسي
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -11,37 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. سحب الكود من GitHub
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. تثبيت JDK (مطلوب للأندرويد)
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
-      # 3. كاش للـ Gradle لتسريع البناء
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v3
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      # 4. بناء APK Debug
       - name: Build Debug APK
         run: ./gradlew assembleDebug
 
-      # 5. تشغيل Lint (فحص الكود)
       - name: Run Lint
         run: ./gradlew lintDebug
 
-      # 6. تشغيل Unit Tests
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest
 
-      # 7. رفع تقارير الفحص والاختبارات
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -50,3 +43,33 @@ jobs:
           path: |
             app/build/reports/**
             app/build/test-results/**
+
+  instrumented-tests:
+    name: Instrumented Tests (Emulator)
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v3
+
+      - name: Run Android Emulator and Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_5
+          script: ./gradlew connectedDebugAndroidTest
