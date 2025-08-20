@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">الدولة السلجوقية (الأحداث والشخصيات)</string>
+    <string name="app_name">الدولة السلجوقية</string>
     <string name="characters">أبرز الشخصيات</string>
     <string name="events">الأحداث</string>
     <string name="menu_moreApps">المزيد من التطبيقات</string>

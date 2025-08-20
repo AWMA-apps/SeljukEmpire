@@ -1,0 +1,49 @@
+name: Android CI (Kotlin)
+
+on:
+  push:
+    branches: [ "master" ]   # الفرع الرئيسي
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. سحب الكود من GitHub
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. تثبيت JDK (مطلوب للأندرويد)
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # 3. كاش للـ Gradle لتسريع البناء
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v3
+
+      # 4. بناء APK Debug
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+
+      # 5. تشغيل Lint (فحص الكود)
+      - name: Run Lint
+        run: ./gradlew lintDebug
+
+      # 6. تشغيل Unit Tests
+      - name: Run Unit Tests
+        run: ./gradlew testDebugUnitTest
+
+      # 7. رفع تقارير الفحص والاختبارات
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: |
+            app/build/reports/**
+            app/build/test-results/**

@@ -6,13 +6,12 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("androidx.navigation.safeargs")
     id ("kotlin-parcelize")
-    // For Kotlin-only modules
-    //id("androidx.navigation.safeargs.kotlin")
+
 }
 
 android {
     namespace = "com.awma.seljukempire"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.awma.seljukempire"

@@ -26,7 +26,6 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class PlaceholderFragment : Fragment() {
     private val vm: AppViewModel by viewModels()
-
     private var _binding: FragmentMainBinding? = null
     private lateinit var adapter: Adapter
 
@@ -71,7 +70,6 @@ class PlaceholderFragment : Fragment() {
                     vm.viewModelScope.launch {
                         vm.loadEvents()
                     }
-
             }
 
             2 -> {
