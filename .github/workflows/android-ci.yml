@@ -65,11 +65,13 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v3
 
-      - name: Run Android Emulator and Tests
+      - name: Run Android Emulator and Tests  
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 30
           target: google_apis
           arch: x86_64
           profile: pixel_5
+          emulator-options: -no-window -no-audio -no-snapshot
+          disable-animations: true
           script: ./gradlew connectedDebugAndroidTest
