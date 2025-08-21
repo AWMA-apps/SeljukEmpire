@@ -65,14 +65,17 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v3
 
+      - name: Run Unit Tests
+        run: ./gradlew testDebugUnitTest
+        
       - name: Run Android Emulator and Tests  
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
+          api-level: 29
           target: default
-          arch: x86_64
-          profile: pixel_5
-          emulator-options: -no-window -no-audio -no-snapshot
+          arch: x86
+          profile: Nexus 6
+          emulator-options: -no-window -gpu swiftshader_indirect -no-boot-anim -no-snapshot
           disable-animations: true
           emulator-boot-timeout: 1200
           script: ./gradlew connectedDebugAndroidTest
