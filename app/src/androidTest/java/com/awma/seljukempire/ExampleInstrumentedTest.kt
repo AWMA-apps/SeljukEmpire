@@ -61,19 +61,6 @@ class ExampleInstrumentedTest {
                 isCompletelyDisplayed()
             )
         ).check(doesNotExist())
-//        Thread.sleep(5000) // مؤقتاً عشان تنتظر البيانات
-//
-//        onView(allOf(
-//            withId(R.id.recyclerView),
-//            isCompletelyDisplayed()
-//        )).check(RecyclerViewItemCountAssertion(atLeast = 1))
-        //        try {
-//            Thread.sleep(1000) // Wait for a short duration
-//        } catch (e: InterruptedException) {
-//            e.printStackTrace()
-//        }
-//        onView(allOf(withId(R.id.progressBar),
-//            withEffectiveVisibility(Visibility.GONE)))
-//            .check(matches(not(isDisplayed())))
+
     }
 }
