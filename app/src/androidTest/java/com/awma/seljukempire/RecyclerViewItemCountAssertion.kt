@@ -1,5 +1,4 @@
 package com.awma.seljukempire
-
 import android.view.View
 import androidx.test.espresso.NoMatchingViewException
 import androidx.test.espresso.ViewAssertion

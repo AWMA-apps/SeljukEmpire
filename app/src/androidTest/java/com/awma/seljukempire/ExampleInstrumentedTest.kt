@@ -2,20 +2,27 @@ package com.awma.seljukempire
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.swipeLeft
+import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
 import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.RootMatchers.isFocusable
+import androidx.test.espresso.matcher.ViewMatchers
+import androidx.test.espresso.matcher.ViewMatchers.isCompletelyDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.awma.seljukempire.presentation.ui.MainActivity
 import org.hamcrest.CoreMatchers.allOf
+import org.hamcrest.CoreMatchers.not
 
 import org.junit.Test
 import org.junit.runner.RunWith
 
 import org.junit.Assert.*
 import org.junit.Rule
+import kotlin.random.Random
 
 
 /**
@@ -43,16 +50,28 @@ class ExampleInstrumentedTest {
         onView(allOf(withId(R.id.progressBar), isDisplayed()))
             .check(matches(isDisplayed()))
 
-        onView(allOf(withId(R.id.recyclerView),isDisplayed()))
-            .check(RecyclerViewItemCountAssertion(0))
-        try {
-            Thread.sleep(5000) // Wait for a short duration
-        } catch (e: InterruptedException) {
-            e.printStackTrace()
-        }
-        onView(allOf(withId(R.id.recyclerView),isDisplayed()))
-            .check(RecyclerViewItemCountAssertion(atLeast = 1))
-//        try {
+        Thread.sleep(4000) // Wait for a short duration
+
+        onView(
+            allOf(
+                withId(R.id.recyclerView),
+                isCompletelyDisplayed()
+            )
+        ).check(RecyclerViewItemCountAssertion(atLeast = 1))
+
+        onView(
+            allOf(
+                withId(R.id.progressBar),
+                isCompletelyDisplayed()
+            )
+        ).check(doesNotExist())
+//        Thread.sleep(5000) // مؤقتاً عشان تنتظر البيانات
+//
+//        onView(allOf(
+//            withId(R.id.recyclerView),
+//            isCompletelyDisplayed()
+//        )).check(RecyclerViewItemCountAssertion(atLeast = 1))
+        //        try {
 //            Thread.sleep(1000) // Wait for a short duration
 //        } catch (e: InterruptedException) {
 //            e.printStackTrace()

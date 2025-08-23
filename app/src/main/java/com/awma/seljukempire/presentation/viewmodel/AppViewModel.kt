@@ -27,6 +27,6 @@ class AppViewModel @Inject constructor(private val repository: CountryRepository
 
     suspend fun loadCharacters() {
         _characters.value = repository.loadCharacters()
-        Log.d("AppViewModel", "loadCharacters: ${_characters.value}")
+        //Log.d("AppViewModel", "loadCharacters: ${_characters.value}")
     }
 }
