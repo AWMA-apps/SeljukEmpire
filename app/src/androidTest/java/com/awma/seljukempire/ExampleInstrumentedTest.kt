@@ -46,7 +46,7 @@ class ExampleInstrumentedTest {
         onView(allOf(withId(R.id.progressBar), isDisplayed()))
             .check(matches(isDisplayed()))
 
-        Thread.sleep(4000) // Wait for a short duration
+        Thread.sleep(5000) // Wait for a short duration
 
         onView(
             allOf(
