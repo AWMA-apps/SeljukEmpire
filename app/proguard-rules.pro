@@ -69,3 +69,23 @@
 -dontwarn java.lang.instrument.UnmodifiableClassException
 -dontwarn org.apiguardian.api.API$Status
 -dontwarn org.apiguardian.api.API
+
+# Keep Firebase model classes
+-keepclassmembers class * {
+    @com.google.firebase.database.IgnoreExtraProperties <fields>;
+}
+
+-keepclassmembers class * {
+    @com.google.firebase.database.PropertyName <methods>;
+}
+
+# Keep Kotlin data classes (serialization)
+-keep class com.awma.seljukempire.data.model.** { *; }
+
+# Keep Glide
+-keep class com.bumptech.glide.** { *; }
+-keep interface com.bumptech.glide.** { *; }
+
+# Keep Hilt
+-keep class dagger.hilt.** { *; }
+-keep class * implements dagger.hilt.** { *; }

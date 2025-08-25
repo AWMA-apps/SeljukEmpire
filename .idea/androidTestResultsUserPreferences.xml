@@ -11,6 +11,7 @@
                   <entry key="Duration" value="90" />
                   <entry key="Pixel_3" value="120" />
                   <entry key="Tests" value="360" />
+                  <entry key="samsung SM-G981U" value="120" />
                 </map>
               </option>
             </AndroidTestResultsTableState>

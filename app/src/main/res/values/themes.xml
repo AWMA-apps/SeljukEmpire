@@ -18,6 +18,9 @@
     </style>
 
 
+        <!-- Create AppTheme to match old references -->
+        <style name="AppTheme" parent="Theme.SeljukEmpire" />
+
 
     <style name="Theme.SeljukEmpire.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

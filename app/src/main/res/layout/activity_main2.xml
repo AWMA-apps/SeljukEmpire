@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.SeljukEmpire"
     tools:context=".presentation.ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -27,7 +28,9 @@
             android:layout_width="match_parent"
             android:backgroundTint="@color/colorPrimary"
             app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="#AFF6B1"
+            app:tabTextColor="#6EC7D3"
+            app:tabIndicatorHeight="1dp"
+            app:tabIndicatorColor="@color/white"
             android:layout_height="wrap_content" />
     </com.google.android.material.appbar.AppBarLayout>
 

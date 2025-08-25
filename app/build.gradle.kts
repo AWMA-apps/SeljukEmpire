@@ -26,7 +26,7 @@ android {
         applicationId = "com.awma.seljukempire"
         minSdk = 23
         targetSdk = 35
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -46,7 +46,7 @@ android {
     buildTypes {
         if (keystoreProperties.isNotEmpty())
             getByName("release") {
-                isMinifyEnabled = false
+                isMinifyEnabled = true
                 signingConfig = signingConfigs.getByName("release")
             }
         release {
@@ -57,7 +57,7 @@ android {
             )
         }
         debug {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
