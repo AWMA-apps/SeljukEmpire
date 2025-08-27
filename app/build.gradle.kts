@@ -8,7 +8,7 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("androidx.navigation.safeargs")
     id("kotlin-parcelize")
-
+    id("com.github.triplet.play") version "3.12.1"
 }
 val keystoreProperties = Properties()
 val keystoreFile = rootProject.file("keystore.properties")
@@ -16,6 +16,12 @@ if (keystoreFile.exists()) {
     keystoreFile.inputStream().use { keystoreProperties.load(it) }
 } else {
     println("⚠️ keystore.properties not found locally, using empty properties.")
+}
+
+play {
+    serviceAccountCredentials.set(file("play-service-account.json"))
+    track.set("internal") // internal, alpha, beta, production
+    defaultToAppBundles.set(true)
 }
 
 android {

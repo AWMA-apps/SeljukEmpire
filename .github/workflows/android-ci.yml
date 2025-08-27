@@ -118,3 +118,10 @@ jobs:
         with:
           name: release-aab
           path: app/build/outputs/bundle/release/app-release.aab
+
+      - name: Decode Play Store JSON
+        run: |
+          echo "${{ secrets.PLAY_STORE_JSON }}" | base64 --decode > play-service-account.json
+
+      - name: Publish to Google Play
+        run: ./gradlew publishRelease
