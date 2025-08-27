@@ -69,7 +69,10 @@
 -dontwarn java.lang.instrument.UnmodifiableClassException
 -dontwarn org.apiguardian.api.API$Status
 -dontwarn org.apiguardian.api.API
-
+-dontwarn org.jetbrains.annotations.NotNull
+-dontwarn org.jetbrains.annotations.Nullable
+-dontwarn org.jetbrains.annotations.TestOnly
+-dontwarn org.jetbrains.annotations.VisibleForTesting
 # Keep Firebase model classes
 -keepclassmembers class * {
     @com.google.firebase.database.IgnoreExtraProperties <fields>;

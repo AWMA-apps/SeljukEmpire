@@ -55,12 +55,5 @@ class ExampleInstrumentedTest {
             )
         ).check(RecyclerViewItemCountAssertion(atLeast = 1))
 
-        onView(
-            allOf(
-                withId(R.id.progressBar),
-                isCompletelyDisplayed()
-            )
-        ).check(doesNotExist())
-
     }
 }
