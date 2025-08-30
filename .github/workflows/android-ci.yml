@@ -124,4 +124,4 @@ jobs:
           echo '${{ secrets.PLAY_STORE_CREDENTIALS }}' > play-service-account.json
 
       - name: Publish to Google Play
-        run: ./gradlew publishRelease
+        run: ./gradlew publishReleaseBundle
